@@ -36,12 +36,13 @@ body {
 #proxy_summary_wrapper {
   display: flex;
   justify-content: space-between;
+  margin: auto 20px;
 }
 
 /* Comment this out */
-#gall_root {
+/* #gall_root {
   width: 30vw;
-}
+} */
 
 #cart-app {
   margin-right: 0;
