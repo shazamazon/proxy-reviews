@@ -36,7 +36,7 @@ body {
 #proxy_summary_wrapper {
   display: flex;
   justify-content: space-between;
-  margin: auto 20px;
+  margin: auto 10px;
 }
 
 /* Comment this out */
@@ -62,5 +62,16 @@ body {
 }
 
 #des_itemDescriptionModule {
-  width: auto;
+  width: 90%;
+  margin-left: 4%;
+
 }
+
+/* Uncomment for page load testing: */
+/* #rev_reviews_container{
+  height: 600px;
+}
+
+#aggregate_rev_container {
+  height: 600px;
+} */
