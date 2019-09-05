@@ -45,11 +45,7 @@ body {
 } */
 
 #cart-app {
-  margin-right: 0;
-}
-
-#reviewsApp {
-
+  min-width: 300px;
 }
 
 .bar {
@@ -64,7 +60,30 @@ body {
 #des_itemDescriptionModule {
   width: 90%;
   margin-left: 4%;
+}
 
+#proxy_witch {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+}
+
+#master-artboard {
+  fill: cadetblue;
+  animation: yAxis 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+}
+
+#QA-comp-cont {
+  border: none;
+  margin-left: 10px;
+
+}
+
+#qa-title {
+  margin-top: 0;
+  color: red;
 }
 
 /* Uncomment for page load testing: */
@@ -75,3 +94,31 @@ body {
 #aggregate_rev_container {
   height: 600px;
 } */
+
+.demo-dot {
+  animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+}
+
+.demo-dot::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  animation: yAxis 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+}
+
+@keyframes yAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes xAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(100px);
+  }
+}
