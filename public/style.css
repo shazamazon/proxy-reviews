@@ -31,6 +31,11 @@ html {
 
 body {
   margin: 0;
+  animation: bgColor 2s;
+}
+
+#components {
+  animation: fadeIn 2s;
 }
 
 #proxy_summary_wrapper {
@@ -66,13 +71,21 @@ body {
   z-index: 100;
   position: absolute;
   top: 50%;
-  left: 50%;
-  animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+  left: 40%;
+  animation: xAxis 3s;
 }
 
 #master-artboard {
   fill: cadetblue;
-  animation: yAxis 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+  animation: yAxis 3s;
+}
+
+#hero_logo {
+  z-index: 100;
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  animation: fadeOut 2s;
 }
 
 #QA-comp-cont {
@@ -86,6 +99,20 @@ body {
   color: red;
 }
 
+#moon {
+  fill: whitesmoke;
+  width: 1000px;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  animation: fadeOut 2s;
+}
+
+#Carousel {
+  margin-bottom: 60px;
+}
+
 /* Uncomment for page load testing: */
 /* #rev_reviews_container{
   height: 600px;
@@ -95,21 +122,7 @@ body {
   height: 600px;
 } */
 
-.demo-dot {
-  animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
-}
-
-.demo-dot::after {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  background-color: #fff;
-  animation: yAxis 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
-}
-
-@keyframes yAxis {
+/* @keyframes yAxis {
   50% {
     animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
     transform: translateY(-100px);
@@ -121,4 +134,71 @@ body {
     animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
     transform: translateX(100px);
   }
+} */
+
+@keyframes yAxis {
+  0% {
+    transform: translateY(1000px);
+    opacity: 1;
+  }
+  
+  30% {
+    transform: translateY(-200px);
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
 }
+
+@keyframes xAxis {
+  0% {
+    transform: translateX(1000px);
+  }
+  
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} 
+
+@keyframes bgColor {
+  0% {
+    background: #232F3E;
+  }
+  50% {
+    background: #232F3E;
+  }
+  100% {
+    background: white;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+} 
