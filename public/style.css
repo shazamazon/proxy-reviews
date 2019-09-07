@@ -111,6 +111,10 @@ body {
   margin-bottom: 60px;
 }
 
+#Browsing-History-Carousel {
+  margin-bottom: 30px;
+}
+
 @keyframes yAxis {
   0% {
     transform: translateY(1000px);
