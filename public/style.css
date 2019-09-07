@@ -64,10 +64,11 @@ body {
 
 #proxy_witch {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 35%;
   animation: xAxis 3s;
+  transform: translate(-50%, -50%);
 }
 
 #master-artboard {
