@@ -72,7 +72,7 @@ body {
 }
 
 #master-artboard {
-  fill: cadetblue;
+  filter: invert(1) sepia(1) saturate(18.3) hue-rotate(155.6deg) brightness(0.70);
   animation: yAxis 3s;
 }
 
