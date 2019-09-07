@@ -31,11 +31,11 @@ html {
 
 body {
   margin: 0;
-  animation: bgColor 2s;
+  animation: bgColor 2.5s;
 }
 
 #components {
-  animation: fadeIn 2s;
+  animation: fadeIn 3s;
 }
 
 #proxy_summary_wrapper {
@@ -43,11 +43,6 @@ body {
   justify-content: space-between;
   margin: auto 10px;
 }
-
-/* Comment this out */
-/* #gall_root {
-  width: 30vw;
-} */
 
 #cart-app {
   min-width: 300px;
@@ -71,7 +66,7 @@ body {
   z-index: 100;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 35%;
   animation: xAxis 3s;
 }
 
@@ -82,10 +77,11 @@ body {
 
 #hero_logo {
   z-index: 100;
-  position: absolute;
-  top: 10%;
-  left: 15%;
-  animation: fadeOut 2s;
+  animation: fadeOutLogo 2s;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #QA-comp-cont {
@@ -103,38 +99,16 @@ body {
   fill: whitesmoke;
   width: 1000px;
   height: auto;
-  position: absolute;
-  top: 40%;
-  left: 15%;
   animation: fadeOut 2s;
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #Carousel {
   margin-bottom: 60px;
 }
-
-/* Uncomment for page load testing: */
-/* #rev_reviews_container{
-  height: 600px;
-}
-
-#aggregate_rev_container {
-  height: 600px;
-} */
-
-/* @keyframes yAxis {
-  50% {
-    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-    transform: translateY(-100px);
-  }
-}
-
-@keyframes xAxis {
-  50% {
-    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-    transform: translateX(100px);
-  }
-} */
 
 @keyframes yAxis {
   0% {
@@ -195,6 +169,24 @@ body {
 
 @keyframes fadeOut {
   0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+} 
+
+@keyframes fadeOutLogo {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
     opacity: 1;
   }
 
