@@ -45,7 +45,8 @@ body {
 }
 
 #cart-app {
-  min-width: 300px;
+  width: 200px;
+  min-width: 200px;
 }
 
 .bar {
@@ -113,6 +114,14 @@ body {
 
 #Browsing-History-Carousel {
   margin-bottom: 30px;
+}
+
+#nav-location-btn {
+  width: 200px;
+}
+
+#nav-category-list {
+  min-width: 50%;
 }
 
 @keyframes yAxis {
@@ -199,3 +208,10 @@ body {
     opacity: 0;
   }
 } 
+
+@media only screen and (max-width: 600px) {
+  #proxy_summary_wrapper {
+    flex-direction: column;
+  }
+
+}
